@@ -1,0 +1,8 @@
+# barbican
+# cinder
+# glance
+# keystone
+# neutron
+# nova
+PyYAML
+oslo.config

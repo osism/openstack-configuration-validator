@@ -1,0 +1,127 @@
+---
+barbican:
+  - barbican.certificate.plugin
+  - barbican.certificate.plugin.snakeoil
+  - barbican.common.config
+  - barbican.plugin.crypto
+  - barbican.plugin.crypto.p11
+  - barbican.plugin.crypto.simple
+  - barbican.plugin.dogtag
+  - barbican.plugin.secret_store
+  - keystonemiddleware.auth_token
+  - oslo.log
+  - oslo.messaging
+  - oslo.middleware.cors
+  - oslo.middleware.http_proxy_to_wsgi
+  - oslo.policy
+  - oslo.service.periodic_task
+  - oslo.service.sslutils
+  - oslo.service.wsgi
+
+cinder:
+  - castellan.config
+  - cinder
+  - keystonemiddleware.auth_token
+  - osprofiler
+  - oslo.config
+  - oslo.concurrency
+  - oslo.db
+  - oslo.log
+  - oslo.messaging
+  - oslo.middleware
+  - oslo.policy
+  - oslo.privsep
+  - oslo.reports
+  - oslo.service.periodic_task
+  - oslo.service.service
+  - oslo.service.sslutils
+  - oslo.service.wsgi
+  - oslo.versionedobjects
+
+glance:
+  - glance.api
+  - glance.store
+  - oslo.concurrency
+  - oslo.messaging
+  - oslo.db
+  - oslo.db.concurrency
+  - oslo.policy
+  - keystonemiddleware.auth_token
+  - oslo.log
+  - oslo.middleware.cors
+  - oslo.middleware.http_proxy_to_wsgi
+
+neutron:
+  - neutron
+  - neutron.agent
+  - neutron.db
+  - neutron.extensions
+  - nova.auth
+  - ironic.auth
+  - oslo.log
+  - oslo.db
+  - oslo.policy
+  - oslo.privsep
+  - oslo.concurrency
+  - oslo.messaging
+  - oslo.middleware.cors
+  - oslo.middleware.http_proxy_to_wsgi
+  - oslo.service.sslutils
+  - oslo.service.wsgi
+  - keystonemiddleware.auth_token
+
+neutron_ml2:
+  - neutron.ml2
+  - oslo.log
+
+neutron_metadata_agent:
+  - neutron.metadata.agent
+  - oslo.log
+  - oslo.cache
+
+neutron_openvswitch_agent:
+  - neutron.ml2.ovs.agent
+  - oslo.log
+
+neutron_dhcp_agent:
+  - neutron.az.agent
+  - neutron.base.agent
+  - neutron.dhcp.agent
+  - oslo.log
+
+neutron_l3_agent:
+  - neutron.az.agent
+  - neutron.base.agent
+  - neutron.l3.agent
+  - oslo.log
+
+nova:
+  - nova.conf
+  - oslo.log
+  - oslo.messaging
+  - oslo.policy
+  - oslo.service.periodic_task
+  - oslo.service.service
+  - oslo.db
+  - oslo.db.concurrency
+  - oslo.middleware
+  - oslo.concurrency
+  - keystonemiddleware.auth_token
+
+keystone:
+  - keystone
+  - oslo.cache
+  - oslo.log
+  - oslo.messaging
+  - oslo.policy
+  - oslo.db
+  - oslo.middleware
+  - osprofiler
+
+ceilometer:
+  - ceilometer
+  - ceilometer-auth
+  - oslo.concurrency
+  - oslo.log
+  - oslo.messaging
+  - oslo.service.service
