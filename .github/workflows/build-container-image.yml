@@ -55,4 +55,6 @@ jobs:
           DOCKER_REGISTRY: ${{ secrets.DOCKER_REGISTRY }}
           VERSION: ${{ matrix.openstack_version }}
           REPOSITORY: osism/openstack-configuration-validator
-        if: github.ref == 'refs/heads/main'
+        if: |
+          github.repository == 'osism/openstack-configuration-validator' &&
+          github.ref == 'refs/heads/main'
