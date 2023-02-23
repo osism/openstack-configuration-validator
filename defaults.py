@@ -16,7 +16,7 @@ def _writefile(modulename: str):
         [
             "oslopolicy-policy-generator",
             "--namespace", modulename,
-            "--output-file", base_path / "default_policies.yaml"
+            "--output-file", basepath / "default_policies.yaml"
         ],
         capture_output=True,
     )
