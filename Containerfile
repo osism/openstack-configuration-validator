@@ -30,7 +30,7 @@ RUN apt-get update \
     && python3 /defaults.py \
     && python3 /generator.py
 
-FROM alpine:3.13
+FROM alpine:3.18
 COPY --from=cue-builder /build/bin/cue /bin/cue
 COPY --from=cue-definition-generator /output /definitions
 
