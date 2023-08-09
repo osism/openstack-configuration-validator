@@ -1,4 +1,4 @@
-FROM golang:1.20 AS cue-builder
+FROM golang:1.21 AS cue-builder
 
 WORKDIR /build
 RUN GO111MODULE=on GOPATH=/build go get cuelang.org/go/cmd/cue@v0.3.2
