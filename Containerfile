@@ -3,7 +3,7 @@ FROM golang:1.21 AS cue-builder
 WORKDIR /build
 RUN GO111MODULE=on GOPATH=/build go get cuelang.org/go/cmd/cue@v0.3.2
 
-FROM ubuntu:22.04 AS cue-definition-generator
+FROM ubuntu:24.04 AS cue-definition-generator
 
 ARG VERSION=wallaby
 
